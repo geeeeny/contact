@@ -3,20 +3,20 @@ package edu.iot.contact.service;
 import java.util.List;
 
 import edu.iot.contact.dao.ContactDao;
-import edu.iot.contact.dao.ContactDaoImp1;
+import edu.iot.contact.dao.ContactDaoImpl;
 import edu.iot.contact.model.Contact;
 import edu.iot.contact.model.Member;
 import edu.iot.contact.view.ContactView;
 import edu.iot.lib.app.Context;
 import edu.iot.lib.db.ConnectionProvider;
 
-public class ContactServiceImp1 implements ContactService {
+public class ContactServiceImpl implements ContactService {
 	static final int PER_PAGE = 5;
 	ContactDao dao;
 	ContactView view;
 	
-	public ContactServiceImp1() {
-		dao = new ContactDaoImp1();
+	public ContactServiceImpl() {
+		dao = new ContactDaoImpl();
 		view = ContactView.getInstance();
 	}
 	

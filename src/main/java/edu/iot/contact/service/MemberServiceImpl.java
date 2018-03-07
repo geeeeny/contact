@@ -3,24 +3,24 @@ package edu.iot.contact.service;
 import java.util.List;
 
 import edu.iot.contact.dao.ContactDao;
-import edu.iot.contact.dao.ContactDaoImp1;
+import edu.iot.contact.dao.ContactDaoImpl;
 import edu.iot.contact.dao.MemberDao;
-import edu.iot.contact.dao.MemberDaoImp1;
+import edu.iot.contact.dao.MemberDaoImpl;
 import edu.iot.contact.model.Member;
 import edu.iot.contact.view.MemberView;
 import edu.iot.lib.app.Context;
 import edu.iot.lib.db.ConnectionProvider;
 
-public class MemberServiceImp1 implements MemberService {
+public class MemberServiceImpl implements MemberService {
 	static final int PER_PAGE = 5;
 	MemberDao dao;
 	MemberView view;
 	ContactDao contactDao; //멤버 삭제시 주소록에서 연관된 행들을 삭제하기 위해 필요
 	
-	public MemberServiceImp1() {
-		dao = new MemberDaoImp1();
+	public MemberServiceImpl() {
+		dao = new MemberDaoImpl();
 		view = MemberView.getInstance();
-		contactDao = new ContactDaoImp1();
+		contactDao = new ContactDaoImpl();
 	}
 	
 	@Override

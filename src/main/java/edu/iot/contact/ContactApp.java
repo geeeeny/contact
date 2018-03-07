@@ -2,9 +2,9 @@ package edu.iot.contact;
 
 import edu.iot.contact.model.Member;
 import edu.iot.contact.service.ContactService;
-import edu.iot.contact.service.ContactServiceImp1;
+import edu.iot.contact.service.ContactServiceImpl;
 import edu.iot.contact.service.MemberService;
-import edu.iot.contact.service.MemberServiceImp1;
+import edu.iot.contact.service.MemberServiceImpl;
 import edu.iot.lib.app.Application;
 import edu.iot.lib.app.Context;
 import edu.iot.lib.db.ConnectionProvider;
@@ -23,8 +23,8 @@ public class ContactApp extends Application {
 	ContactService contactService;
 	
 	public ContactApp() {
-		memberService = new MemberServiceImp1();
-		contactService = new ContactServiceImp1();
+		memberService = new MemberServiceImpl();
+		contactService = new ContactServiceImpl();
 	}
 
 	@Override

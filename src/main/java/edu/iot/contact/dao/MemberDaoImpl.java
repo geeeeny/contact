@@ -9,11 +9,11 @@ import java.util.List;
 import edu.iot.contact.model.Member;
 import edu.iot.lib.db.ConnectionProvider;
 
-public class MemberDaoImp1 implements MemberDao {
+public class MemberDaoImpl implements MemberDao {
 
 	Connection conn;
 	
-	public MemberDaoImp1() {
+	public MemberDaoImpl() {
 		conn = ConnectionProvider.getConenction();
 	}
 

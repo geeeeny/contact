@@ -10,11 +10,11 @@ import edu.iot.contact.model.Contact;
 import edu.iot.contact.model.Contact;
 import edu.iot.lib.db.ConnectionProvider;
 
-public class ContactDaoImp1 implements ContactDao {
+public class ContactDaoImpl implements ContactDao {
 
 	Connection conn;
 	
-	public ContactDaoImp1() {
+	public ContactDaoImpl() {
 		conn = ConnectionProvider.getConenction();
 	}
 
