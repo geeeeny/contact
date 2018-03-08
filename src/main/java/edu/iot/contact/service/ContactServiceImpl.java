@@ -153,7 +153,6 @@ public class ContactServiceImpl implements ContactService {
 	//자기 소유 연락처 중에서 해당 이름을 가진 사람들의 연락처 출력
 	@Override
 	public void search() {
-		// TODO 검색하기
 		try {
 			Member member = (Member) Context.getAttribute("USER"); //현재 사용자의 정보를 얻어옴
 			String keyword = view.getString("검색할 이름: ");

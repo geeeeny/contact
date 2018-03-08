@@ -187,7 +187,6 @@ public class ContactDaoImpl implements ContactDao {
 
 	@Override
 	public List<Contact> search(String owner, String keyword) throws Exception {
-		// TODO dao 검색
 		List<Contact> list = new ArrayList<>();
 		String sql = "select * from contacts where owner = ? and name like ?";
 		try(PreparedStatement pstmt = conn.prepareStatement(sql))

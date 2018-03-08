@@ -95,13 +95,11 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public Member getMember(String userId) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<Member> getMemberList(int page) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -176,7 +174,7 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public void changePassword() throws Exception {
-		// TODO Auto-generated method stub
+		// TODO 비밀번호 변경하기
 
 	}
 
